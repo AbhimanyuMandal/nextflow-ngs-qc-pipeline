@@ -4,7 +4,7 @@
 <h1 align="center">Nextflow NGS Quality Control Pipeline</h1>
 
 <p align="center">
-A modular Nextflow DSL2 pipeline for automated NGS quality control** using FastQC and MultiQC.
+A modular Nextflow DSL2 pipeline for automated NGS quality control using FastQC and MultiQC.
 </p>
 
 <p align="center">
