@@ -4,15 +4,18 @@
 <h1 align="center">Nextflow NGS Quality Control Pipeline</h1>
 
 <p align="center">
-A modular **Nextflow DSL2** pipeline for automated **NGS quality control** using **FastQC** and **MultiQC**.
+A modular Nextflow DSL2 pipeline for automated NGS quality control** using FastQC and MultiQC.
 </p>
 
 <p align="center">
-  
-![Nextflow](https://img.shields.io/badge/Nextflow-DSL2-brightgreen)
-![FastQC](https://img.shields.io/badge/FastQC-QC-blue)
-![MultiQC](https://img.shields.io/badge/MultiQC-Reporting-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
+
+<img src="https://img.shields.io/badge/Nextflow-DSL2-brightgreen"/>
+
+<img src="https://img.shields.io/badge/FastQC-QC-blue"/>
+
+<img src="https://img.shields.io/badge/MultiQC-Reporting-orange"/>
+
+<img src="https://img.shields.io/badge/License-MIT-green"/>
 
 </p>
 
