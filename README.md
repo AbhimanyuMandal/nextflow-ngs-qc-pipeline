@@ -1,25 +1,156 @@
 # Nextflow NGS Quality Control Pipeline
 
-A modular Nextflow DSL2 pipeline for automated quality control of NGS FASTQ files using FastQC and MultiQC.
+![Nextflow](https://img.shields.io/badge/Nextflow-DSL2-brightgreen)
+![FastQC](https://img.shields.io/badge/FastQC-QC-blue)
+![MultiQC](https://img.shields.io/badge/MultiQC-Reporting-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-## Features
+A modular **Nextflow DSL2** pipeline for automated **NGS quality control** using **FastQC** and **MultiQC**.
 
-- Modular DSL2 architecture
-- Automated FastQC analysis
-- MultiQC report generation
-- Organized output directories
-- Test dataset included
-- Easily extendable
+---
+
+## Overview
+
+This project demonstrates how to build a reproducible and modular bioinformatics workflow using **Nextflow DSL2**.
+
+The pipeline performs quality assessment of raw FASTQ sequencing data by:
+
+- Running **FastQC** on input FASTQ files.
+- Aggregating quality reports using **MultiQC**.
+- Organizing outputs into structured result directories.
+
+This repository serves as a lightweight, extensible template for larger NGS workflows.
+
+---
 
 ## Workflow
 
-FASTQ
-   │
-   ▼
-FastQC
-   │
-   ▼
-MultiQC
-   │
-   ▼
-QC Report
+```text
+          FASTQ
+             │
+             ▼
+    Channel.fromPath()
+             │
+             ▼
+          FastQC
+             │
+             ▼
+     FastQC Reports
+             │
+             ▼
+          MultiQC
+             │
+             ▼
+    MultiQC HTML Report
+```
+
+---
+
+## Features
+
+- Modular Nextflow DSL2 architecture
+- FastQC quality assessment
+- MultiQC report generation
+- Organized output directories
+- Included test dataset
+- Easily extensible for larger NGS pipelines
+
+---
+
+## Project Structure
+
+```text
+nextflow-ngs-qc-pipeline/
+│
+├── main.nf
+├── nextflow.config
+├── modules/
+│   ├── fastqc.nf
+│   └── multiqc.nf
+├── test_data/
+│   └── sample.fastq.gz
+├── results/
+├── docs/
+├── assets/
+├── README.md
+├── LICENSE
+└── .gitignore
+```
+
+---
+
+## Requirements
+
+- Nextflow
+- Java 21+
+- FastQC
+- MultiQC
+
+---
+
+## Installation
+
+Clone the repository.
+
+```bash
+git clone https://github.com/YOUR_USERNAME/nextflow-ngs-qc-pipeline.git
+
+cd nextflow-ngs-qc-pipeline
+```
+
+---
+
+## Usage
+
+Run the pipeline using the included test dataset.
+
+```bash
+nextflow run main.nf
+```
+
+To use your own FASTQ files:
+
+```bash
+nextflow run main.nf --input "data/*.fastq.gz"
+```
+
+---
+
+## Output
+
+```
+results/
+│
+├── fastqc/
+│   ├── sample_fastqc.html
+│   └── sample_fastqc.zip
+│
+└── multiqc/
+    ├── multiqc_report.html
+    └── multiqc_data/
+```
+
+---
+
+## Future Improvements
+
+- Docker support
+- Conda environment
+- nf-core compatible structure
+- Automatic adapter trimming
+- Support for paired-end sequencing
+- GitHub Actions for continuous integration
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Author
+
+**Abhimanyu Mandal**
+
+Computational Biology | Bioinformatics | Genomics | NGS Analysis
