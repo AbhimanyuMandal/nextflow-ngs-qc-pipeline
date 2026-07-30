@@ -103,17 +103,27 @@ nextflow run main.nf --input "data/*.fastq.gz"
 
 ## Output
 
-```
-results/
-│
-├── fastqc/
-│   ├── sample_fastqc.html
-│   └── sample_fastqc.zip
-│
-└── multiqc/
-    ├── multiqc_report.html
-    └── multiqc_data/
-```
+### Pipeline Execution
+
+<p align="center">
+<img src="assets/pipeline_execution.png" width="90%">
+</p>
+
+### MultiQC Summary
+
+<p align="center">
+<img src="assets/multiqc_summary.png" width="90%">
+</p>
+
+MultiQC report summarizing sequencing quality metrics generated from FastQC analyses.
+
+### Quality Control Metrics
+
+<p align="center">
+<img src="assets/qc_metrics.png" width="90%">
+</p>
+
+Visualization of sequencing quality metrics, including per-base sequence content and GC content.
 
 ---
 
