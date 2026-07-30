@@ -25,24 +25,9 @@ This repository serves as a lightweight, extensible template for larger NGS work
 
 ## Workflow
 
-```text
-          FASTQ
-             │
-             ▼
-    Channel.fromPath()
-             │
-             ▼
-          FastQC
-             │
-             ▼
-     FastQC Reports
-             │
-             ▼
-          MultiQC
-             │
-             ▼
-    MultiQC HTML Report
-```
+<p align="center">
+<img src="assets/workflow.png" width="90%">
+</p>
 
 ---
 
@@ -93,7 +78,7 @@ nextflow-ngs-qc-pipeline/
 Clone the repository.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/nextflow-ngs-qc-pipeline.git
+git clone https://github.com/AbhimanyuMandal/nextflow-ngs-qc-pipeline.git
 
 cd nextflow-ngs-qc-pipeline
 ```
