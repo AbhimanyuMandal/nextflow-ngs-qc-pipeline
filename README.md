@@ -1,4 +1,7 @@
-# Nextflow NGS Quality Control Pipeline
+<p align="center">
+  <img src="assets/banner.png" width="100%" alt="Germline Variant Analysis Pipeline Banner"/>
+</p>
+<h1 align="center">Nextflow NGS Quality Control Pipeline</h1>
 
 ![Nextflow](https://img.shields.io/badge/Nextflow-DSL2-brightgreen)
 ![FastQC](https://img.shields.io/badge/FastQC-QC-blue)
